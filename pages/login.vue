@@ -8,7 +8,7 @@
                 <div class="col-xl-6 offset-xl-3 col-md-8 offset-md-2">
                     <img class="healthconfbox" src="~assets/icons/healthconfbox.svg" alt="">
                     <div class="form-box">
-                        <h3 class="header">Halo, silahkan daftar untuk melanjutkan 😁</h3>
+                        <h3 class="header">Halo, silahkan masuk untuk melanjutkan 😁</h3>
                         <form action="">
                             <input type="email" class="" placeholder="Alamat Email">
                             <input type="password" class="" placeholder="Kata Sandi">

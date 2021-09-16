@@ -13,7 +13,7 @@
                             <input type="email" class="" placeholder="Alamat Email">
                             <div class="row  submit-box">
                                 <div class="col-6 my-auto">
-                                    <NuxtLink to="create-password"><button class="btn btn-primary">Kirim Kode</button></NuxtLink>
+                                    <NuxtLink to="/create-password"><button class="btn btn-primary">Kirim Kode</button></NuxtLink>
                                 </div>
                             </div>
                         </form>

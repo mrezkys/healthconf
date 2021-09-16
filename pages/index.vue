@@ -14,7 +14,7 @@
               Konsultasi seputar covid dan mental health secara gratis dengan dokter yang spesialis dibidangnya.
             </h4>
             <div class="row">
-              <button class="btn btn-primary konsultasi-button" to>Konsultasi Sekarang</button>
+              <NuxtLink to="/auth"><button class="btn btn-primary konsultasi-button" to>Konsultasi Sekarang</button></NuxtLink>
               <button class="btn btn-outline-light panduan-button">Panduan 
                 <svg  class="bottom-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2212 28.3333H21.7798C25.8065 28.3333 28.3332 25.4813 28.3332 21.4453V10.5547C28.3332 6.51867 25.8198 3.66667 21.7798 3.66667H10.2212C6.18117 3.66667 3.6665 6.51867 3.6665 10.5547V21.4453C3.6665 25.4813 6.18117 28.3333 10.2212 28.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

@@ -14,7 +14,7 @@
                             <input type="password" class="" placeholder="Kata Sandi">
                             <div class="row  submit-box">
                                 <div class="col-6 my-auto">
-                                    <button class="btn btn-primary">Masuk</button>
+                                    <NuxtLink to="/dashboard"><button class="btn btn-primary">Masuk</button></NuxtLink>
                                 </div>
                                 <div class="col-6 pl-2 my-auto">
                                     <a href="/reset-password">Lupa Kata Sandi? <strong class="text-primary">Atur Ulang</strong></a>

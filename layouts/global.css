@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Visby CF";
+    src: url(~assets/fonts/VisbyCF/VisbyCF-DemiBold.otf) format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Visby CF";
+    src: url(~assets/fonts/VisbyCF/VisbyCF-Bold.otf) format("opentype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Visby CF";
+    src: url(~assets/fonts/VisbyCF/VisbyCF-ExtraBold.otf) format("opentype");
+    font-weight: 800;
+}
+
+
+/* Poppins */
+
+@font-face {
+    font-family: "Poppins";
+    src: url(~assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(~assets/fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(~assets/fonts/Poppins/Poppins-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(~assets/fonts/Poppins/Poppins-ExtraBold.ttf) format("truetype");
+    font-weight: 800;
+}
+
+/* Global */
+
+*{
+    font-family: "Poppins";
+    font-weight: 400;
+}

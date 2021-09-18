@@ -16,7 +16,7 @@
                             <input type="password" class="" placeholder="Konfirmasi Kata Sandi">
                             <div class="row  submit-box">
                                 <div class="col-6 my-auto">
-                                    <button class="btn btn-primary">Daftar</button>
+                                    <NuxtLink to="/dashboard"><button class="btn btn-primary">Daftar</button></NuxtLink>
                                 </div>
                                 <div class="col-6 pl-2 my-auto">
                                     <a href="/login">Sudah punya akun? <strong class="text-primary">Masuk</strong></a>

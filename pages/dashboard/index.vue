@@ -211,6 +211,19 @@
                             </h5>
                         </div>
                     </div>
+
+                    
+                    <div class="col-lg-3 col-md-6 p-2 menu-box" v-b-modal.modal-covid-chat>
+                        <div class="col-12 secondary">
+                            <div class="tag-secondary">
+                                <p>Chatting</p>
+                            </div>
+                            <img class="icon p-1" src="~assets/icons/chat.svg" alt="">
+                            <h5 class="title">
+                                Konsultasi Tentang Covid19
+                            </h5>
+                        </div>
+                    </div>
                     
 
                     <div class="col-lg-3 col-md-6 p-2 menu-box" v-b-modal.modal-mental-chat>
@@ -226,17 +239,6 @@
                     </div>
                     
 
-                    <div class="col-lg-3 col-md-6 p-2 menu-box" v-b-modal.modal-covid-chat>
-                        <div class="col-12 secondary">
-                            <div class="tag-secondary">
-                                <p>Chatting</p>
-                            </div>
-                            <img class="icon p-1" src="~assets/icons/chat.svg" alt="">
-                            <h5 class="title">
-                                Konsultasi Kesehatan Mental
-                            </h5>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

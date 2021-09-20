@@ -14,7 +14,7 @@
         <b-nav-item class="nav-item" to="/tentang-kami">Tentang Kami</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav>
-        <b-nav-item class="nav-item" to="/auth">Masuk</b-nav-item>
+        <b-nav-item class="nav-item" to="/auth" active>Masuk</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

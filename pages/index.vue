@@ -15,6 +15,7 @@
             </h4>
             <div class="row">
               <NuxtLink to="/auth"><button class="btn btn-primary konsultasi-button" to>Konsultasi Sekarang</button></NuxtLink>
+              <NuxtLink to="#panduan">
               <button class="btn btn-outline-light panduan-button">Panduan 
                 <svg  class="bottom-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2212 28.3333H21.7798C25.8065 28.3333 28.3332 25.4813 28.3332 21.4453V10.5547C28.3332 6.51867 25.8198 3.66667 21.7798 3.66667H10.2212C6.18117 3.66667 3.6665 6.51867 3.6665 10.5547V21.4453C3.6665 25.4813 6.18117 28.3333 10.2212 28.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,6 +23,7 @@
                   <path d="M20.9971 16.4297L15.9998 21.4484L11.0024 16.4297" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
+              </NuxtLink>
             </div>
           </div>
           <div class="col-md-6 welcome-image-box">
@@ -30,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="section-2">
+    <div class="section-2" id="panduan">
       <div class="container-lg">
         <h4 class="header">4 Langkah Mudah</h4>
         <div class="row step-box-wrapper">
@@ -178,30 +180,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="container-lg">
-        <div class="row">
-          <img class="logo pl-3" src="~assets/icons/logo.svg" alt="">
-          <h3 class="company-name">Healthconf</h3>
-        </div>
-        <div class="row footer-content">
-          <div class="col-md-5">
-            <p class="company-description">Healthconf adalah inisiatif para dokter yang menjadi relawan untuk memberi kontribusi ditengah pandemi melalui pemberian konsultasi gratis.</p>
-          </div>
-          <div class="offset-md-1 col-md-3">
-            <p class="company-info">No 40 Baria Sreet 133/2 Un Timur,Jakarta Barat, Indonesia.</p>
-            <p class="company-info">hi@healthconf.com</p>
-            <p class="company-info">(00) 123 456 789</p>
-          </div>
-          <div class="offset-md-1 col-md-2">
-            <h4 class="ikuti-kami">Ikuti Kami</h4>
-            <p class="company-info">Instagram</p>
-            <p class="company-info">Facebook</p>
-            <p class="company-info">Twitter</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Footer/>
   </div>
 </template>
 
@@ -467,45 +446,6 @@
   }
 
 
-
-  .footer{
-    background-color: #010425;
-    padding-top: 60px;
-    padding-bottom: 75px;
-  }
-
-  .footer .logo{
-    height: 30px;
-  }
-
-  .footer .company-name{
-    color: white;
-      margin: 0 15px;
-      font-family: 'Visby CF';
-      font-weight: 700;
-      font-size: 30px;
-  }
-
-  .footer .footer-content{
-    margin-top: 32px;
-  }
-
-  .footer .footer-content .company-description{
-    color: rgb(255, 255, 255, 80%);
-    line-height: 180%;
-    font-size: 20px;
-  }
-
-  .footer .footer-content .company-info{
-    color: rgb(255, 255, 255, 60%);
-  }
-
-  .footer .footer-content .ikuti-kami{
-    color: white;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 16px;
-  }
 
   /* Mobile Responsive */
 

@@ -19,7 +19,7 @@
                                     <NuxtLink to="/dashboard"><button class="btn btn-primary">Daftar</button></NuxtLink>
                                 </div>
                                 <div class="col-6 pl-2 my-auto">
-                                    <a href="/login">Sudah punya akun? <strong class="text-primary">Masuk</strong></a>
+                                    <NuxtLink to="/login"><a>Sudah punya akun? <strong class="text-primary">Masuk</strong></a></NuxtLink>
                                 </div>
                             </div>
                         </form>

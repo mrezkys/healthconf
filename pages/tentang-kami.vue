@@ -21,9 +21,13 @@
         <div class="section-2">
             <div class="container-lg">
                 <h4 class="header">Berawal Dari...</h4>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Fusce id velit ut tortor pretium viverra suspendisse. Massa eget egestas purus viverra accumsan. Iaculis eu non diam phasellus vestibulum lorem sed. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae.
+                <p class="content">Berawal dari inisiatif para relawan yang pada awalnya berjumlah 3 orang. Healthconf dibangun didasari oleh keinginan untuk membantu sesama oleh ketiga dokter tersebut. Fokus utamanya adalah pemberian konsultasi terhadap masyarakat yang membutuhkan bimbingan, saran, dan penenang di situasi pandemi yang melanda sekarang.                
                     <br> <br>
-                     Nibh tellus molestie nunc non blandit massa enim. Arcu odio ut sem nulla pharetra. Mi tempus imperdiet nulla malesuada pellentesque elit. Massa eget egestas purus viverra accumsan in nisl. Vitae suscipit tellus mauris a diam maecenas. Nascetur ridiculus mus mauris vitae. Semper auctor neque vitae tempus quam pellentesque nec nam. Id eu nisl nunc mi ipsum faucibus vitae. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Augue eget arcu dictum varius duis at consectetur lorem donec.</p>
+                Hadirnya pandemi covid 19 ditengah masyarakat membuat situasi menjadi sangat memprihatinkan. Selain dampak dari pandemi ini sendiri yaitu penyebaran dan infeksi virus corona, pandemi ini juga berdampak pada mental masyarakat. Ditambah dengan pembatasan mobilisasi dan anjuran untuk diam dirumah saja memperparah kondisi mental masyarakat karena kurangnya interaksi dengan orang lain dan juga sulitnya akses untuk ke rumah sakit langsung. 
+                    <br> <br>
+
+                Healthconf hadir untuk mengatasi masalah tersebut. Dengan mengedepankan fitur konsultasi online berbasis chat dan video call, kami berharap bisa membantu banyak masyarakat. Dimulai dari 3 dokter pendiri, kini Healthconf telah memiliki lebih dari 20 Relawan yang siap membantu. Kami juga membuka kesempatan bagi para proffesional yang hendak menjadi relawan. Kedepannya, healthconf akan hadir dengan inovasi inovasi baru yang masih dalam proses pengembangan.
+                </p>
             </div>
         </div>
         <Footer/>

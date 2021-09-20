@@ -2,21 +2,193 @@
     <div class="dashboard">
         <div class="custom-nav">
             <div class="container-lg">
-                <Navbar/>
+                <DashboardNavbar/>
             </div>
         </div>
         <div class="stacked-1">
             <div class="container-lg">
                 <div class="stacked-content text-center">
-                    <h4 class="header">Pilih layanan konsultasi</h4>
+                    <h4 class="header">Pilih layanan konsultasi {{$route.query.logintype}}</h4>
                 </div> 
             </div>
         </div>
         <div class="section-1">
             <div class="container-lg">
                 <div class="row menu-wrapper">
+
+<!----------------- Guest Modal ------------------------->
+                    <b-modal ref="guest-alert" class="guest-alert-modal" scrollable size="xl" title="Pemberitahuan" hide-footer >
+                        <div class="content">
+                            <p style="line-height: 150%">Kamu masuk sebagai tamu sehingga layanan berupa videocall tidak bisa kamu akses. Untuk mengaksesnya silahkan masuk dengan akun yang telah kamu buat sebelumnya, atau membuat akun baru.</p>
+                        </div>
+                    </b-modal>
+
+<!----------------- covid VC ------------------------->
+                    <b-modal id="modal-covid-vc" scrollable size="xl" hide-footer hide-header style="border-radius: 20px !important" >
+                        <div class="konsultasi-form-modal">
+                            <div class="header p-lg-0 p-2">
+                                <div class="row d-flex justify-content-md-between p-lg-3">
+                                    <h3 class="title">Formulir Konsultasi.</h3>
+                                    <img class="company-logo" src="~assets/icons/logoblack.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="col-lg-7 p-0 m-0">
+                                    <p>Kamu memilih konsultasi tentang covid19 melalui video call. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Tanggal Konsultasi...</option>
+                                            <option value="1">21 September 2021</option>
+                                            <option value="2">22 September 2021</option>
+                                            <option value="3">23 September 2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Jam Konsultasi...</option>
+                                            <option value="1">08:00 - 10:00 WIB</option>
+                                            <option value="2">10:00 - 12:00 WIB</option>
+                                            <option value="3">13:00 - 15:00 WIB</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">                                    
+                                <button class="btn btn-primary btn-lg daftar d-inline-block" @click="$bvModal.hide('modal-covid-vc')">Daftar Konsultasi</button>
+                                <button type="button" class="btn btn-link d-inline-block my-auto ml-lg-2" @click="$bvModal.hide('modal-covid-vc')">Batal</button>
+                            </div>
+                        </div>
+                    </b-modal>
+
+<!----------------- mental VC ------------------------->
+                    <b-modal id="modal-mental-vc" scrollable size="xl" hide-footer hide-header style="border-radius: 20px !important" >
+                        <div class="konsultasi-form-modal">
+                            <div class="header p-lg-0 p-2">
+                                <div class="row d-flex justify-content-md-between p-lg-3">
+                                    <h3 class="title">Formulir Konsultasi.</h3>
+                                    <img class="company-logo" src="~assets/icons/logoblack.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="col-lg-7 p-0 m-0">
+                                    <p>Kamu memilih konsultasi tentang kesehatan mental melalui video call. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Tanggal Konsultasi...</option>
+                                            <option value="1">21 September 2021</option>
+                                            <option value="2">22 September 2021</option>
+                                            <option value="3">23 September 2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Jam Konsultasi...</option>
+                                            <option value="1">08:00 - 10:00 WIB</option>
+                                            <option value="2">10:00 - 12:00 WIB</option>
+                                            <option value="3">13:00 - 15:00 WIB</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">                                    
+                                <button class="btn btn-primary btn-lg daftar d-inline-block" @click="$bvModal.hide('modal-mental-vc')">Daftar Konsultasi</button>
+                                <button type="button" class="btn btn-link d-inline-block my-auto ml-lg-2" @click="$bvModal.hide('modal-mental-vc')">Batal</button>
+                            </div>
+                        </div>
+                    </b-modal>
+
                     
-                    <div class="col-lg-3 col-md-6 p-2 menu-box">
+<!----------------- covid chat ------------------------->
+                    <b-modal id="modal-covid-chat" scrollable size="xl" hide-footer hide-header style="border-radius: 20px !important" >
+                        <div class="konsultasi-form-modal">
+                            <div class="header p-lg-0 p-2">
+                                <div class="row d-flex justify-content-md-between p-lg-3">
+                                    <h3 class="title">Formulir Konsultasi.</h3>
+                                    <img class="company-logo" src="~assets/icons/logoblack.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="col-lg-7 p-0 m-0">
+                                    <p>Kamu memilih konsultasi tentang covid19 melalui chat. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Tanggal Konsultasi...</option>
+                                            <option value="1">21 September 2021</option>
+                                            <option value="2">22 September 2021</option>
+                                            <option value="3">23 September 2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Jam Konsultasi...</option>
+                                            <option value="1">08:00 - 10:00 WIB</option>
+                                            <option value="2">10:00 - 12:00 WIB</option>
+                                            <option value="3">13:00 - 15:00 WIB</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">                                    
+                                <button class="btn btn-primary btn-lg daftar d-inline-block" @click="$bvModal.hide('modal-covid-chat')">Daftar Konsultasi</button>
+                                <button type="button" class="btn btn-link d-inline-block my-auto ml-lg-2" @click="$bvModal.hide('modal-covid-chat')">Batal</button>
+                            </div>
+                        </div>
+                    </b-modal>
+                    
+<!----------------- mental chat ------------------------->
+                    <b-modal id="modal-mental-chat" scrollable size="xl" hide-footer hide-header style="border-radius: 20px !important" >
+                        <div class="konsultasi-form-modal">
+                            <div class="header p-lg-0 p-2">
+                                <div class="row d-flex justify-content-md-between p-lg-3">
+                                    <h3 class="title">Formulir Konsultasi.</h3>
+                                    <img class="company-logo" src="~assets/icons/logoblack.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="col-lg-7 p-0 m-0">
+                                    <p>Kamu memilih konsultasi tentang kesehatan mental melalui chat. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Tanggal Konsultasi...</option>
+                                            <option value="1">21 September 2021</option>
+                                            <option value="2">22 September 2021</option>
+                                            <option value="3">23 September 2021</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 form-wrapper">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Jam Konsultasi...</option>
+                                            <option value="1">08:00 - 10:00 WIB</option>
+                                            <option value="2">10:00 - 12:00 WIB</option>
+                                            <option value="3">13:00 - 15:00 WIB</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">                                    
+                                <button class="btn btn-primary btn-lg daftar d-inline-block" @click="$bvModal.hide('modal-mental-chat')">Daftar Konsultasi</button>
+                                <button type="button" class="btn btn-link d-inline-block my-auto ml-lg-2" @click="$bvModal.hide('modal-mental-chat')">Batal</button>
+                            </div>
+                        </div>
+                    </b-modal>
+                    
+                    <div class="col-lg-3 col-md-6 p-2 menu-box" v-b-modal.modal-covid-vc>
                         <div class="col-12 primary">
                             <div class="tag-primary">
                                 <p>Video Call</p>
@@ -26,10 +198,9 @@
                                 Konsultasi Tentang Covid19
                             </h5>
                         </div>
-                    </div>
-                    
+                    </div>                    
 
-                    <div class="col-lg-3 col-md-6 p-2 menu-box">
+                    <div class="col-lg-3 col-md-6 p-2 menu-box" v-b-modal.modal-mental-vc>
                         <div class="col-12 primary">
                             <div class="tag-primary">
                                 <p>Video Call</p>
@@ -42,12 +213,12 @@
                     </div>
                     
 
-                    <div class="col-lg-3 col-md-6 p-2 menu-box">
+                    <div class="col-lg-3 col-md-6 p-2 menu-box" v-b-modal.modal-mental-chat>
                         <div class="col-12 secondary">
                             <div class="tag-secondary">
-                                <p>Video Call</p>
+                                <p>Chatting</p>
                             </div>
-                            <img class="icon" src="~assets/icons/videocall.svg" alt="">
+                            <img class="icon p-1" src="~assets/icons/chat.svg" alt="">
                             <h5 class="title">
                                 Konsultasi Kesehatan Mental
                             </h5>
@@ -55,12 +226,12 @@
                     </div>
                     
 
-                    <div class="col-lg-3 col-md-6 p-2 menu-box">
+                    <div class="col-lg-3 col-md-6 p-2 menu-box" v-b-modal.modal-covid-chat>
                         <div class="col-12 secondary">
                             <div class="tag-secondary">
-                                <p>Video Call</p>
+                                <p>Chatting</p>
                             </div>
-                            <img class="icon" src="~assets/icons/videocall.svg" alt="">
+                            <img class="icon p-1" src="~assets/icons/chat.svg" alt="">
                             <h5 class="title">
                                 Konsultasi Kesehatan Mental
                             </h5>
@@ -69,7 +240,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-2">
+        <div class="section-2" id="sec2">
             <div class="container-lg">
                 <h3 class="header">Jadwal Konsultasi</h3>
 
@@ -93,25 +264,29 @@
                 <div class="schedule-wrapper">
                     <p class="date ml-2">22 September 2021</p>
                     
+                    <NuxtLink to="/dashboard/schedule-detail/22sep2021-0800WIB" style="text-decoration: none !important;">
                     <div class="schedule-box not-today d-flex justify-content-between">
                         <div class="col-md-8 col-lg-5 col-9">
-                            <h5 class="title">Konsultasi tentang Kesehatan Mental dengan Dr. Elissia S.Psi</h5>
+                            <h5 class="title">Konsultasi tentang Kesehatan Mental dengan Dr. Jeremy Alam</h5>
                         </div>
                         <div class="datetime my-auto">
-                            <p>Siang</p>
-                            <h5>13:00</h5>
+                            <p>Pagi</p>
+                            <h5>08:00</h5>
                         </div>
                     </div>
-
+                    </NuxtLink>
+                    
+                    <NuxtLink to="/dashboard/schedule-detail/22sep2021-1000WIB" style="text-decoration: none !important;">
                     <div class="schedule-box not-today d-flex justify-content-between">
                         <div class="col-md-8 col-lg-5 col-9">
-                            <h5 class="title">Konsultasi tentang Kesehatan Mental dengan Dr. Elissia S.Psi</h5>
+                            <h5 class="title">Konsultasi tentang Covid 19 dengan Dr. Jessyca Mi</h5>
                         </div>
                         <div class="datetime my-auto">
-                            <p>Siang</p>
-                            <h5>13:00</h5>
+                            <p>Pagi</p>
+                            <h5>10:00</h5>
                         </div>
                     </div>
+                    </NuxtLink>
 
 
                 </div>
@@ -120,7 +295,107 @@
     </div>
 </template>
 
+<script>
+export default {
+    methods: {
+        showGuestModal(){
+            this.$refs['guest-alert'].show();
+        },
+        hideGuestModal(){
+            this.$refs['guest-alert'].show();
+        }
+    },
+    mounted(){
+        if(this.$route.query.logintype == 'guest'){
+            this.showGuestModal();
+            console.log('berhasil');
+        }
+    }
+}
+</script>
+
 <style scoped>
+
+
+    .konsultasi-form-modal{
+        padding: 30px 50px !important;
+    }
+
+    .konsultasi-form-modal .header .title{
+        font-size: 34px;
+        font-weight: 800;
+        font-family: 'Visby CF';
+    }
+
+    .konsultasi-form-modal .content p{
+        font-size: 18px;
+        line-height: 175%;
+    }
+
+    .konsultasi-form-modal .form{
+        margin-top: 32px;
+    }
+
+    .konsultasi-form-modal .form .form-select{
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 10px;
+    }
+
+    .konsultasi-form-modal .footer{
+        margin-top: 36px;
+    }
+
+    .konsultasi-form-modal .footer .btn{
+        padding: 15px 30px;
+    }
+
+    .konsultasi-form-modal .form .daftar{
+        padding: 15px 40px;
+    }
+
+    @media (max-width: 575.98px) {
+       .konsultasi-form-modal{
+           padding: 20px 16px !important;
+       } 
+
+        .konsultasi-form-modal .header .company-logo{
+            display: none;
+        }
+
+        .konsultasi-form-modal .header .title{
+            font-size: 26px;
+        }
+
+        .konsultasi-form-modal .content p{
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+
+        .konsultasi-form-modal .form .form-wrapper{
+            margin-top: 16px;
+        }
+
+        .konsultasi-form-modal .footer .btn{
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 575.98px) and (max-width: 1366px) {
+        .konsultasi-form-modal .header .company-logo{
+            display: none;
+        }
+
+        .konsultasi-form-modal .form .form-wrapper{
+            margin-top: 24px;
+        }
+    }
+
+
+
+
+
+
     .dashboard .custom-nav{
         background-color: #010425;
     }

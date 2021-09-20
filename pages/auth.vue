@@ -17,7 +17,7 @@
                                 <NuxtLink to="/register"><button class="btn btn-primary btn-lg">Daftar</button></NuxtLink>
                             </div>
                             <div class="col-12">
-                                <NuxtLink to="/dashboard"><button class="btn btn-lg guest-button">Masuk Sebagai Tamu</button></NuxtLink>
+                                <NuxtLink to="/dashboard?logintype=guest"><button class="btn btn-lg guest-button">Masuk Sebagai Tamu</button></NuxtLink>
                             </div>
                         </div>
                     </div>

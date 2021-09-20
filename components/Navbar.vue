@@ -8,10 +8,10 @@
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav class="mr-auto">
-        <b-nav-item class="nav-item" to="/" active>Home</b-nav-item>
-        <b-nav-item class="nav-item" to="/">Relawan</b-nav-item>
-        <b-nav-item class="nav-item" to="/">Program</b-nav-item>
-        <b-nav-item class="nav-item" to="/">Tentang Kami</b-nav-item>
+        <b-nav-item class="nav-item" to="/" nuxt-link-active='/relawan'>Home</b-nav-item>
+        <b-nav-item class="nav-item" to="/relawan">Relawan</b-nav-item>
+        <b-nav-item class="nav-item" to="/program">Program</b-nav-item>
+        <b-nav-item class="nav-item" to="/tentang-kami">Tentang Kami</b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav>
         <b-nav-item class="nav-item" to="/auth">Masuk</b-nav-item>

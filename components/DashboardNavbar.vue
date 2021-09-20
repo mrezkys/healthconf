@@ -8,9 +8,9 @@
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
     <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav class="mr-auto">
-        <NuxtLink style="text-decoration: none" to="/dashboard"><b-nav-item class="nav-item" to="/dashboard" active>Dashboard</b-nav-item></NuxtLink>
+        <NuxtLink style="text-decoration: none" to="/dashboard"><b-nav-item class="nav-item" to="/dashboard">Dashboard</b-nav-item></NuxtLink>
         <b-nav-item class="nav-item" to="/dashboard#sec2">Jadwal</b-nav-item>
-        <b-nav-item class="nav-item" to="/">Bantuan</b-nav-item>
+        <b-nav-item class="nav-item" target="_blank" href="https://wa.me/6280000000000">Bantuan</b-nav-item>
       </b-navbar-nav>
     <b-dropdown id="dropdown-right" right text="mrezkys" variant="outline-light" class="m-2">
         <b-dropdown-item to="/dashboard/profile">Profil</b-dropdown-item>

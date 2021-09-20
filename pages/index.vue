@@ -14,7 +14,9 @@
               Konsultasi seputar covid dan mental health secara gratis dengan dokter yang spesialis dibidangnya.
             </h4>
             <div class="row">
-              <NuxtLink to="/auth"><button class="btn btn-primary konsultasi-button" to>Konsultasi Sekarang</button></NuxtLink>
+              <NuxtLink to="/auth">
+                <button class="btn btn-primary konsultasi-button">Konsultasi Sekarang</button>
+              </NuxtLink>
               <NuxtLink to="#panduan">
               <button class="btn btn-outline-light panduan-button">Panduan 
                 <svg  class="bottom-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,10 +60,7 @@
             <h4 class="help-text">Masih belum jelas? silahkan melihat :</h4>
           </div>
           <div class="col-md-3 col-6">
-            <button class="btn btn-outline-light btn-lg help-button">Video Panduan</button>
-          </div>
-          <div class="col-md-3 col-6">
-            <button class="btn btn-outline-light btn-lg help-button">Chat Interaktif</button>
+            <a href="https://youtube.com" target="_blank"><button class="btn btn-outline-light btn-lg help-button">Video Panduan</button></a>
           </div>
         </div>
       </div>
@@ -118,49 +117,51 @@
           </div>
         </div>
         <div class="row doctor-wrapper">
-          <div class="col-md-3 text-center doctor-box">
+          <div class="col-md-3 col-6 text-center doctor-box">
             <img class="doctor-avatar" src="~assets/images/elissiamyla.png" alt="">
             <h4 class="doctor-name">Elissia Myla</h4>
             <p class="doctor-title">Psikiater</p>
           </div>
-          <div class="col-md-3 text-center doctor-box">
+          <div class="col-md-3 col-6 text-center doctor-box">
             <img class="doctor-avatar" src="~assets/images/karen.png" alt="">
             <h4 class="doctor-name">Karen Agnola</h4>
             <p class="doctor-title">Psikolog</p>
           </div>
-          <div class="col-md-3 text-center doctor-box">
+          <div class="col-md-3 col-6 text-center doctor-box">
             <img class="doctor-avatar" src="~assets/images/elizza.png" alt="">
             <h4 class="doctor-name">Elissia Myla</h4>
             <p class="doctor-title">Psikiater</p>
           </div>
-          <div class="col-md-3 text-center doctor-box">
+          <div class="col-md-3 col-6 text-center doctor-box">
             <img class="doctor-avatar" src="~assets/images/jessyca.png" alt="">
             <h4 class="doctor-name">Jessyca Mi</h4>
             <p class="doctor-title">Dokter</p>
           </div>
-          <div class="col-md-3 text-center doctor-box">
+          <div class="col-md-3 col-6 text-center doctor-box">
             <img class="doctor-avatar" src="~assets/images/hena.png" alt="">
             <h4 class="doctor-name">Hena Syafira</h4>
             <p class="doctor-title">Psikiater</p>
           </div>
-          <div class="col-md-3 text-center doctor-box">
+          <div class="col-md-3 col-6 text-center doctor-box">
             <img class="doctor-avatar" src="~assets/images/nora.png" alt="">
             <h4 class="doctor-name">Elissia Myla</h4>
             <p class="doctor-title">Psikiater</p>
           </div>
-          <div class="col-md-3 text-center doctor-box">
+          <div class="col-md-3 col-6 text-center doctor-box">
             <img class="doctor-avatar" src="~assets/images/jeremy.png" alt="">
             <h4 class="doctor-name">Jeremy Alam</h4>
             <p class="doctor-title">Psikolog</p>
           </div>
-          <div class="col-md-3 text-center join-box">
+          <div class="col-md-3 col-6 text-center join-box">
             <img class="join-icon" src="~assets/icons/addmember.svg" alt="">
+              <NuxtLink to="/relawan" style="text-decoration: none; color: black">
               <h4 class="join-title">Gabung Menjadi Relawan
                 <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M23.8647 14.1685L5.73975 14.1685" stroke="#071238" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M16.5547 6.88903L23.8651 14.168L16.5547 21.4482" stroke="#071238" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </h4>
+              </NuxtLink>
           </div>
         </div>
       </div>
@@ -175,7 +176,7 @@
             <p class="subtitle">Kami membutuhkan bantuan relawan profesional untuk membantu lebih banyak orang lagi.</p>
           </div>
           <div class="col-md-4 my-auto d-flex justify-content-end button-wrapper">
-            <button class="button btn">Daftar Sekarang <img class="ml-2" src="~assets/icons/ArrowRight.svg" alt=""></button>
+            <NuxtLink to="/relawan"><button class="button btn">Daftar Sekarang <img class="ml-2" src="~assets/icons/ArrowRight.svg" alt=""></button></NuxtLink>
           </div>
         </div>
       </div>
@@ -450,10 +451,12 @@
   /* Mobile Responsive */
 
   
-  @media (max-width: 575.98px) {
+  @media (max-width: 1024px) {
     .section-1{
       background-size: cover;
+      min-height: 500px;
     }
+
     .section-1 .welcome-box .welcome-title{
       color: white;
       font-size: 32px;
@@ -466,9 +469,10 @@
       margin-bottom: 32px;
     }
 
-    .section-1 .welcome-box .btn{
+
+    .section-1 .welcome-box .row .btn{
       margin-left: 16px;
-      padding: 10px 15px;
+      padding: 10px 15px !important;
       font-size: 14px;
       border-radius: 10px;
       font-family: 'Poppins';
@@ -507,6 +511,10 @@
       margin-bottom: 18px;
     }
 
+    .section-3{
+      padding-bottom: 16px;
+    }
+
     .section-3 .info-box .title{
       color: black;
       font-size: 32px;
@@ -523,7 +531,6 @@
     }
 
     .section-3 .info-image{
-      display: none !important;
     }
 
     .section-3 .detail-info-wrapper{
@@ -560,6 +567,49 @@
     .section-3 .detail-info-wrapper .detail-info-box  .subtitle{
       display: none;
     }
+
+    .section-4 .header{
+      color: black;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 150%;
+      font-family: 'Visby CF';
+      margin-bottom: 16px;
+    }
+
+    .section-4 .subheader{
+      color: black;
+      filter: opacity(0.8);
+      font-size: 16px;
+      line-height: 175%;
+      font-weight: 400;
+    }
+
+    .section-4 .doctor-wrapper{
+      margin-top: 16px;
+    }
+
+    .section-4 .doctor-wrapper .doctor-box .doctor-avatar{
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section-4 .doctor-wrapper .doctor-box .doctor-name{
+      font-size: 20px;
+    }
+
+    .section-4 .doctor-wrapper .join-box .join-icon{
+      max-width: 100%;
+      height: auto;
+
+    }
+
+    .section-4 .doctor-wrapper .join-box .join-title{
+      font-size: 20px;
+
+    }
+
+
 
 
 

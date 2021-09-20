@@ -29,7 +29,7 @@
                 </div>
                 <div class="detail-info-box col-md-8 col-9 my-auto">
                   <h3 class="title">Konsultasi Covid & Mental melalui Video Call</h3>
-                  <p class="subtitle">Konsultasi seputar covid dan mental health secara gratis dengan.</p>
+                  <p class="subtitle">Konsultasi seputar covid dan mental health secara gratis.</p>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="detail-info-box col-md-8 col-9 my-auto">
                   <h3 class="title">Konsultasi Covid & Mental melalui Video Call</h3>
-                  <p class="subtitle">Konsultasi seputar covid dan mental health secara gratis dengan.</p>
+                  <p class="subtitle">Konsultasi seputar covid dan mental health secara gratis.</p>
                 </div>
               </div>
             </div>

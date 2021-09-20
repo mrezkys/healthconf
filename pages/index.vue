@@ -116,7 +116,7 @@
             <h1 class="header">Relawan Profesional yang siap membantu.</h1>
           </div>
           <div class="col-md-6 my-auto">
-            <h4 class="subheader">Jangan ragu untuk berkonsultasi. Di Healtconf para relawan merupakan Dokter yang Profesional di Bidangnya.</h4>
+            <h4 class="subheader">Jangan ragu untuk berkonsultasi. Di Healthconf para relawan merupakan Dokter yang Profesional di Bidangnya.</h4>
           </div>
         </div>
         <div class="row doctor-wrapper">

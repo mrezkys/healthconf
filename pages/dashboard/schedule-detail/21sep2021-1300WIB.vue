@@ -2,14 +2,14 @@
     <div class="schedule-detail">
         <div class="custom-nav ">          
             <div class="container-lg">
-                <Navbar/>
+                <DashboardNavbar/>
             </div>
         </div>
         <div class="section-1">
             <div class="container-lg">
                 <div class="row d-flex justify-content-between">                                 
                     <div class="schedule-info col-lg-6 col-md-8">
-                        <h5 class="date">13:00 WIB | 21 September 2021</h5>
+                        <h5 class="date">Video Call | 13:00 WIB | 21 September 2021</h5>
                         <h2 class="title">Konsultasi Kesehatan Mental dengan Dr. Elissia S.Psi</h2>
                         <button class="btn btn-primary">Konsultasi Sekarang</button>
                     </div>

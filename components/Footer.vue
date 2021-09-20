@@ -17,9 +17,9 @@
                 </div>
                 <div class="offset-md-1 col-md-2">
                     <h4 class="ikuti-kami">Ikuti Kami</h4>
-                    <p class="company-info">Instagram</p>
-                    <p class="company-info">Facebook</p>
-                    <p class="company-info">Twitter</p>
+                    <a href="https://instagram.com" target="_blank" class="company-info mt-2 d-block">Instagram</a>
+                    <a href="https://fb.com" target="_blank" class="company-info mt-2 d-block">Facebook</a>
+                    <a href="https://twitter.com" target="_blank" class="company-info mt-2 d-block">Twitter</a>
                 </div>
                 </div>
             </div>

@@ -62,6 +62,9 @@
           <div class="col-md-3 col-6">
             <a href="https://youtube.com" target="_blank"><button class="btn btn-outline-light btn-lg help-button">Video Panduan</button></a>
           </div>
+          <div class="col-md-3 col-6">
+            <a href="https://drive.google.com" target="_blank"><button class="btn btn-outline-light btn-lg help-button">Pdf Panduan</button></a>
+          </div>
         </div>
       </div>
     </div>

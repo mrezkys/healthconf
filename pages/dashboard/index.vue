@@ -34,7 +34,7 @@
                             </div>
                             <div class="content">
                                 <div class="col-lg-7 p-0 m-0">
-                                    <p>Kamu memilih konsultasi tentang covid19 melalui video call. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                    <p>Kamu memilih konsultasi tentang covid19 melalui video call menggunakan aplikasi zoom . Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
                                 </div>
                             </div>
                             <div class="form">
@@ -75,7 +75,7 @@
                             </div>
                             <div class="content">
                                 <div class="col-lg-7 p-0 m-0">
-                                    <p>Kamu memilih konsultasi tentang kesehatan mental melalui video call. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                    <p>Kamu memilih konsultasi tentang kesehatan mental melalui video call menggunakan aplikasi zoom . Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
                                 </div>
                             </div>
                             <div class="form">
@@ -117,7 +117,7 @@
                             </div>
                             <div class="content">
                                 <div class="col-lg-7 p-0 m-0">
-                                    <p>Kamu memilih konsultasi tentang covid19 melalui chat. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                    <p>Kamu memilih konsultasi tentang covid19 melalui chat menggunakan aplikasi whatsapp. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
                                 </div>
                             </div>
                             <div class="form">
@@ -158,7 +158,7 @@
                             </div>
                             <div class="content">
                                 <div class="col-lg-7 p-0 m-0">
-                                    <p>Kamu memilih konsultasi tentang kesehatan mental melalui chat. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                                    <p>Kamu memilih konsultasi tentang kesehatan mental melalui chat menggunakan aplikasi whatsapp. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
                                 </div>
                             </div>
                             <div class="form">

@@ -11,7 +11,7 @@
                     <div class="schedule-info col-lg-6 col-md-8">
                         <h5 class="date">Video Call | 10:00 WIB | 22 September 2021</h5>
                         <h2 class="title">Konsultasi Kesehatan Mental dengan Dr. Jessyca Mi</h2>
-                        <button class="btn btn-primary">Konsultasi Sekarang</button>
+                        <button class="btn btn-primary" disabled>Gabung Zoom Meeting</button>
                     </div>
                     <div class="col-md-3 doctor-image">
                         <img src="~assets/images/jessycaprofile.png" class="img-fluid" alt="">

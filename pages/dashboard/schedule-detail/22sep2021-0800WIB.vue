@@ -11,7 +11,7 @@
                     <div class="schedule-info col-lg-6 col-md-8">
                         <h5 class="date">Chatting | 08:00 WIB | 22 September 2021</h5>
                         <h2 class="title">Konsultasi tentang Kesehatan Mental dengan Dr. Jeremy Alam</h2>
-                        <button class="btn btn-primary">Konsultasi Sekarang</button>
+                        <button class="btn btn-primary" disabled>Chat Sekarang</button>
                     </div>
                     <div class="col-md-3 doctor-image">
                         <img src="~assets/images/jeremyprofile.png" class="img-fluid" alt="">

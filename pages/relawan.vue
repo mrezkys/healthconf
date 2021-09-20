@@ -12,7 +12,7 @@
                         <h1 class="header">Ayo berkontribusi dengan menjadi Relawan.</h1>
                     </div>
                     <div class="offset-md-1 col-md-5 my-auto">
-                        <p class="content">Konsultasi seputar covid dan mental health secara gratis dengan dokter yang spesialis dibidangnya.</p>
+                        <p class="content">Kami membutuhkan bantuan relawan profesional untuk membantu lebih banyak orang lagi.</p>
                         <a href="#form"><button class="btn btn-primary">Daftar Sekarang</button></a>
                     </div>
                 </div>
@@ -24,19 +24,19 @@
                 <div class="row step-box-wrapper">
                 <div class="col-md-3 step-box">
                     <h3 class="title">Daftar Online</h3>
-                    <p class="subtitle">Kamu bisa mendaftarkan akun dengan mengklik tombol Konsultasikan Sekarang.</p>
+                    <p class="subtitle">Kamu diharuskan mengisi formulir pendaftaran online dibawah, yang berisi data diri.</p>
                 </div>
                 <div class="col-md-3 step-box">
                     <h3 class="title">Seleksi Berkas</h3>
-                    <p class="subtitle">Langkah selanjutnya adalah memilih layanan konsultasi melalui chat atau video call.</p>
+                    <p class="subtitle">Tahapan ini mengharuskan anda mengupload berkas berkas yang diperlukan.</p>
                 </div>
                 <div class="col-md-3 step-box">
                     <h3 class="title">Tes Wawancara</h3>
-                    <p class="subtitle">Jadwalkan konsultasi anda dengan dokter agar bisa menyesuaikan waktu anda.</p>
+                    <p class="subtitle">Tes wawancara dilakukan setelah lulus tahapan seleksi berkas.</p>
                 </div>
                 <div class="col-md-3 step-box">
                     <h3 class="title">Pembekalan</h3>
-                    <p class="subtitle">Saat tiba giliran anda, anda dapat mengkonsultasikan masalah yang anda alami.</p>
+                    <p class="subtitle">Setelah semuanya, sebelum menjadi relawan akan diberi pembekalan.</p>
                 </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="container-lg">
                 <div class="col-md-7 p-1">
                     <h3 class="header">Formulir Pendaftaran Online Relawan</h3>
-                    <p class="subheader">Kamu memilih konsultasi tentang covid19 melalui video call. Sebelum itu, kamu harus mengisi formulir konfirmasi dibawah.</p>
+                    <p class="subheader">Kamu harus mengisi formulir dibawah ini dengan data diri yang sebenar benarnya dan berdasarkan diri sendiri.</p>
                 </div>
                 <div class="form">
                     <div class="row">

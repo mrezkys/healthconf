@@ -11,7 +11,7 @@
                     <div class="schedule-info col-lg-6 col-md-8">
                         <h5 class="date">Video Call | 13:00 WIB | 21 September 2021</h5>
                         <h2 class="title">Konsultasi Kesehatan Mental dengan Dr. Elissia S.Psi</h2>
-                        <button class="btn btn-primary">Konsultasi Sekarang</button>
+                        <a href="https://zoom.com" target="_blank"><button class="btn btn-primary">Gabung Zoom Meeting</button></a>
                     </div>
                     <div class="col-md-3 doctor-image">
                         <img src="~assets/images/elisprofile.png" class="img-fluid" alt="">

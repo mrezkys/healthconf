@@ -17,7 +17,7 @@
                                     <NuxtLink to="/dashboard"><button class="btn btn-primary">Masuk</button></NuxtLink>
                                 </div>
                                 <div class="col-6 pl-2 my-auto">
-                                    <a href="/reset-password">Lupa Kata Sandi? <strong class="text-primary">Atur Ulang</strong></a>
+                                    <NuxtLink to="/reset-password"><a>Lupa Kata Sandi? <strong class="text-primary">Atur Ulang</strong></a></NuxtLink>
                                 </div>
                             </div>
                         </form>

@@ -12,7 +12,7 @@
         <b-nav-item class="nav-item" to="/dashboard#sec2">Jadwal</b-nav-item>
         <b-nav-item class="nav-item" target="_blank" href="https://wa.me/6280000000000">Bantuan</b-nav-item>
       </b-navbar-nav>
-    <b-dropdown id="dropdown-right" right text="mrezkys" variant="outline-light" class="m-2">
+    <b-dropdown id="dropdown-right" left text="mrezkys" variant="outline-light" class="m-2">
         <b-dropdown-item to="/dashboard/profile">Profil</b-dropdown-item>
         <b-dropdown-item to="/">Keluar</b-dropdown-item>
     </b-dropdown>
